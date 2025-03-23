@@ -1,4 +1,4 @@
-# Design and Implementation of securing data using Cryptography and Steganography
+# Enhancing Data Security Using Cryptography,Steganography and file encryption
 <p>It is  a Python based application with use of flask a microservice based
 framework to demonstrate the combination of cryptography that is based on symmetric key and
 steganography that is based on modified LSB which helps to provide security to confidential data over
@@ -6,31 +6,23 @@ an unsecured network.</p>
 
 # Project Team Members :
 <ul>
-<li><b>Awanit Ranjan (181CO161) </b></li>
-<li><b>Rutwik Mulay (181CO144)</b></li>
-<li><b>Kshitij Raj (181CO129) </b></li>
+<li><b>ganesh pendyala (U21CS226) </b></li>
+<li><b>hari shankar(U21CS221)</b></li>
+<li><b>datta raj varma(U21CS220) </b></li>
+<li><b>gaddam ganesh(U21CS211) </b></li>
 </ul>
 
 <br>
 
 
-Feel Free to head to this Youtube Video  for demo of the project : https://youtu.be/N4Kap2nE2Pc 
+ 
 
 # METHODOLOGY : 
 <div>
 <p>
-  First, we take the original data and encrypt it into
-ciphertext by utilizing the proposed symmetric cryptography method in which we will break the 128 bits
-into 4 equal groups of 32 bit each this 32-bit block will be undergone some circular shift and xor
-operations with secret keys . ( These ideas are inspired by [1] and [2] ). After this, the encrypted data will
-be embedded in a Cover Image by use of proposed steganography strategy which is utilizing least
-significant bit (LSB) [ In this we are think of going with a mixture of LSB-1, LSB-2, LSB-3 (i.e storing at
-first, second, and a third bit from the least significant side) alternatingly. ] to finally create a new image
-which is a stego content this is sent over the channel and at receiver side the same process will occur
-but in reverse, starting from extracting encrypted content from stego and finally decrypting using
-proposed decryption algorithm again inspired by [1] and [2]. Although ideas are inspired, we will use our
-own proposed architecture for encryption and decryption finally converting into an application for
-sending data over insecure channels.
+  The encrypted data is then embedded within a cover image using a modified least significant bit (LSB) steganography technique. This method alternates between LSB-1, LSB-2, and LSB-3, storing bits at different positions to enhance security. The resulting stego-image is transmitted over the network.
+
+At the receiver’s end, the encrypted content is extracted from the stego-image, followed by decryption using the proposed algorithm. While inspired by prior research, we designed a custom encryption and decryption architecture to ensure robust data security, ultimately developing an application for secure transmission over untrusted channels.
 </p>
 </div>
 
@@ -39,24 +31,24 @@ sending data over insecure channels.
 # How To Run The Project :
 
 Make Dirctory Crypto_Project : <br/>
-`mkdir Crypto_Project`
+`mkdir Crypstego_Project`
 
  <br/>
  
 Move Inside the Directory:   <br/>
-`cd Crypto_Project`
+`cd Crypstego_Project`
 
  <br/>
  
  
 Clone The Repo: <br/>
-`git clone https://github.com/Awanit512/Implementation-of-securing-data-using-Crypto-and-Stegano`
+`git clone https://github.com/ganesh68788/Enhancing_data_security_Using_cryptography_steganography_file_encryption`
 
 
  <br/>
  
 Move Inside The Clone Repo: <br/>
-`cd Implementation-of-securing-data-using-Crypto-and-Stegano`
+`cd Enhancing_data_security_Using_cryptography_steganography_file_encryption`
 
 
  <br/>
@@ -81,3 +73,9 @@ Steganography Techniques . ​ International Journal of Advanced Computer Scienc
 
 [2] Ms. Hemlata Sharma, Ms. MithleshArya, and Mr. Dinesh Goyal. Department of CSE ​ Secure Image Hiding Algorithm using
 Cryptography and Steganography. 2013
+
+[3] S. Wendzel, S. Zander, B. Fechner, and C. Herdin. "Double Layer Security Using Crypto-Stegano Techniques: A Comprehensive Study." Health and Technology, 2021.
+
+[4] S. Sarmah. "Evaluating the Merits and Constraints of Cryptography-Steganography Integration." International Journal of Information Security, 2024.
+
+[5] M. R. K. Krishna, V. R. Kumar, and N. R. Reddy. "A Secure Data Communication System Using Cryptography and Steganography." International Journal of Computer Networks & Communications (IJCNC), 2013.
